@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fira+Sans&display=swap');
+
+:root{
+  --btn-primary-color: #040d12;
+  --card-bg-color: #5C8574;
+  --bg-color: #183d3d;
+  --utility-color: #93b1a6;
+  --color: #040d12;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* write your CSS here */
+
+/* Generall styles */
+html{
+  font-size: 14px;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+  background-color: var(--bg-color);
+}
+p{
+  text-align: center;
+  margin-top: 0.4rem;
+}
+h1{
+  font-size: 2.8rem;
+  text-align: center;
+}
+h2{
+font-family: 'Fira Sans', sans-serif;
+font-size: 2.1rem;
+color: #eee;
+margin-top: 2rem;
+}
+h3{
+  font-size: 0.9;
+  text-align: center;
+  margin: 1.3rem;
+}
+label{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-right: 0.6rem;
+  color: #eee;
+}
+label input{
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+/* .plan styles */
+.plan{
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.starter{
+  width: 20vw;
+  min-width: 250px;
+  position: relative;
+  top: 0%;
+  left: auto;
+  background-color: var(--btn-primary-color);
+  color: #eee;
+  padding: 0.7rem 0;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  border-radius: 5px;
+}
+.starter p:first-child{
+  margin-top: 0;
+}
+
+/* Card styles */
+
+/* Card container */
+.card-container{
+  width: 80%;
+  max-width: 1100px;
+  margin: -1.5rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+/* Card */
+.card{
+  flex: 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.9rem 0;
+  background-color: var(--card-bg-color);
+  color: var(--color);
+  border-radius: 10px;
+}
+/* Card Header */
+.card-header{
+  font-family: 'Fira Sans', sans-serif;
+  width: 300px;
+  
+}
+.small-month{
+  font-size: small;
+}
+/* Select element styles */
+.drop{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: unset;
+  border: 1px solid #ccc;
+  font-size: inherit;
+}
+/* Card main content */
+.card-content{
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+.card-content ul li{
+  list-style: inside;
+  line-height: 1.9;
+}
+.card-content ul li::marker{
+  color: var(--btn-primary-color);
+}
+/* Card footer */
+.card-footer{
+  justify-items: flex-end;
+}
+/* buttons */
+.btn{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  padding:  1rem 3rem;
+  border-radius: 4px;
+  border: 0;
+}
+/* btn primary */
+.btn-primary{
+  background-color: var(--btn-primary-color);
+  color: #ccc;
+}
+/* btn secondary */
+.btn-secondary{
+  background-color: inherit;
+  outline: 1px solid var(--bg-color);
+  color: var(--color);
+}
+
+/* Hover states */
+
+label:hover{
+  opacity: 0.7;
+}
+input[type="radio"]:checked{
+  box-shadow: 0 0 2px 1px var(--card-bg-color);
+}
+select:hover{
+  box-shadow: 1px 1px 2px 1px var(--color),
+  -1px -1px 2px 1px var(--color);
+  border: none;
+}
+.btn-primary:hover{
+  background-color: unset;
+  outline: 1px solid var(--btn-primary-color);
+  color: var(--color);
+}
+.btn-secondary:hover{
+  background-color: var(--btn-primary-color);
+  color: #ccc;
+}
+.btn-primary:active{
+  background-color: var(--btn-primary-color);
+  color: #ccc;
+}
+.btn-secondary:active{
+  outline: 2px dashed var(--color);
+  background-color: unset;
+  color: var(--color);
+}

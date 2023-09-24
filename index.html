@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing Card</title>
+</head>
+<body>
+  <div class="plan">
+    <div class="starter">
+      <p>Your Current plan:</p>
+      <p>Starter Free Trail <span>500MAUs</span></p>
+    </div>
+    <h2>Choose a plan</h2>
+    <div>
+      <label for="monthly-plan">
+        <input type="radio" name="subscription-type" id="monthly-plan">Billed monthly
+      </label>
+      <label for="anually-plan">
+        <input type="radio" name="subscription-type" id="anually-plan" checked>Billed anually
+      </label>
+    </div>
+  </div>
+  <section class="card-container">
+    <article class="card">
+      <header class="card-header">
+        <h3>Starter</h3>
+        <h1>$19</h1>
+      </header>
+      <section class="card-content">
+        <ul>
+          <li>500 MAUs</li>
+          <li>3 projects</li>
+          <li>Unlimited guides</li>
+          <li>Unlimited flows</li>
+          <li>Unlimited branded themes</li>
+          <li>Email support</li>
+        </ul>
+      </section>
+      <footer class="card-footer">
+        <button class="btn btn-secondary">Choose Plan</button>
+      </footer>
+    </article>
+    <article class="card">
+      <header class="card-header">
+        <h3>Pro</h3>
+        <h1>$99<span class="small-month">/month</span></h1>
+        <select name="maus" id="" class="drop">
+          <option value="">2500 MAUs</option>
+        </select>
+        <p>Monthly active user</p>
+      </header>
+      <section class="card-content">
+        <ul>
+          <li>All starter features, puls:</li>
+          <li>Unlimited projects</li>
+          <li>Unlimited fully customizable themes</li>
+          <li>A dedicated Customer Success Manager</li>
+        </ul>
+      </section>
+      <footer class="card-footer">
+        <button class="btn btn-primary">Choose Plan</button>
+      </footer>
+    </article>
+    <article class="card">
+      <header class="card-header">
+        <h3>Enterprise</h3>
+        <h1>Let's Talk</h1>
+      </header>
+      <section class="card-content">
+        <ul>
+          <li>All pro features</li>
+          <li>Unlimited MAUs</li>
+          <li>Dedicated environment</li>
+          <li>Enterprise account administration</li>
+          <li>Premium support and services</li>
+        </ul>
+      </section>
+      <footer class="card-footer">
+        <button class="btn btn-secondary">Contact Us</button>
+      </footer>
+    </article>
+   </section>
+</body>
+</html>
